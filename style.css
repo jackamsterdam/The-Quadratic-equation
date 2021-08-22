@@ -1,0 +1,36 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    font-size: medium;
+    font-style: italic;
+}
+
+.container {
+    background-color: cadetblue;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.item {}
+
+.item-1 {
+    flex: 1;
+}
+
+.item-2 {
+    flex: 1;
+}
+
+.item-3 {
+    flex: 1;
+}
