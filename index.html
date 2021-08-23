@@ -10,26 +10,56 @@
 </head>
 
 <body>
-    <h1>Solving the Quadratic formula - <span>by Jack</span></h1>
+    <h1>Solving the Quadratic Formula - <span>by Jack</span></h1>
 
     <div class="container">
         <div class="item item-1">
-            <label for="parameter-a">Parameter A:</label>
-            <input type="text" id="paramter-a">
+            <label for="parameter-a">Parameter a:</label>
+            <input type="text" id="parameter-a" placeholder=" Enter 2">
         </div>
         <div class="item item-2">
-            <label for="parameter-b">Parameter B:</label>
-            <input type="text" id="paramter-b">
+            <label for="parameter-b">Parameter b:</label>
+            <input type="text" id="parameter-b" placeholder=" Enter 5">
         </div>
         <div class="item item-3">
-            <label for="parameter-c">Parameter C:</label>
-            <input type="text" id="paramter-c">
+            <label for="parameter-c">Parameter c:</label>
+            <input type="text" id="parameter-c" placeholder=" Enter -3">
+        </div>
+        <div class="item item-4">
+            <button onclick="calculate()" id="button" type="button">Calculate</button>
+        </div>
+        <div class="item item-5">
+            <label for="x1">x1:</label>
+            <input type="text" id="x1" placeholder=" Should get: 0.5">
+        </div>
+        <div class="item item-6">
+            <label for="x2">x2:</label>
+            <input type="text" id="x2" placeholder=" Should get: -3">
         </div>
     </div>
 
+    <div class="injection"></div>
+
     <h2>Explanation:</h2>
-    <p>b2 − 4ac is the <strong>Discriminant</strong>Discriminant</p>
-    <p>and</p>
+    <p>The Quadratic Formula can always find the solution to a quadratic equation.</p>
+    <p>First, we must arrange the quadratic equation in standard-form set equal to zero. In doing so, we organize the equation in such a way so that we can accurately identify the values from the equation that correspond with the formula. Next, we simply
+        plug in these values into the formula</p>
+    <p>b2 − 4ac is the <strong>Discriminant</strong> - Imagine if the curve "just touches" the x-axis. Or imagine the curve is so high it doesn't even cross the x-axis! This is where the "Discriminant" helps us ... Do you see b2 − 4ac in the formula below?
+        It is called the Discriminant, because it can "discriminate" between the possible types of answer: when b2 − 4ac is positive, we get two Real solutions. When it is zero we get just ONE real solution (both answers are the same). When it is negative
+        we get a pair of Complex solutions</p>
+
+
+    <div class="images">
+        <img src="pics/quadratic-formula-explained.png" height="300px" alt="">
+        <br>
+        <img src="pics/quadratic-soccer.gif" alt="">
+        <br>
+        <img src="pics/quadratic-equation-reason.svg" alt="">
+        <br>
+        <img src="pics/Capture.JPG" alt="">
+    </div>
+
+
 
 
 
