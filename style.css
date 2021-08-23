@@ -59,6 +59,14 @@ input {
     flex: 1;
 }
 
+.item-5 input {
+    cursor: not-allowed;
+}
+
+.item-6 input {
+    cursor: not-allowed;
+}
+
 [type="button"] {
     cursor: pointer;
     background-color: burlywood;
@@ -75,7 +83,20 @@ input {
 
 .injection {
     font-size: large;
-    border: 1px solid black;
+    border: 3px solid cadetblue;
     font-weight: 700;
     color: brown;
+    width: fit-content;
+    /* width: max-content; */
+    margin: 10px auto 0px;
+}
+
+.injection-error {
+    font-size: large;
+    border: 3px solid red;
+    font-weight: 700;
+    color: brown;
+    width: fit-content;
+    /* width: max-content; */
+    margin: 10px auto 0px;
 }

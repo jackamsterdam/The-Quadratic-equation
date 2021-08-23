@@ -15,48 +15,49 @@
     <div class="container">
         <div class="item item-1">
             <label for="parameter-a">Parameter a:</label>
-            <input type="text" id="parameter-a" placeholder=" Enter 2">
+            <input type="text" id="parameter-a" name="parameter-a" placeholder=" Enter 2" pattern="[1-9]+" minlength="1" title="Enter only numbers">
         </div>
         <div class="item item-2">
             <label for="parameter-b">Parameter b:</label>
-            <input type="text" id="parameter-b" placeholder=" Enter 5">
+            <input type="text" id="parameter-b" name="parameter-b" placeholder=" Enter 5" pattern="[0-9]+" minlength="1" title="Enter only numbers">
         </div>
         <div class="item item-3">
             <label for="parameter-c">Parameter c:</label>
-            <input type="text" id="parameter-c" placeholder=" Enter -3">
+            <input type="text" id="parameter-c" name="parameter-c" placeholder=" Enter -3" pattern="[0-9]+" minlength="1" title="Enter only numbers">
         </div>
         <div class="item item-4">
             <button onclick="calculate()" id="button" type="button">Calculate</button>
         </div>
         <div class="item item-5">
             <label for="x1">x1:</label>
-            <input type="text" id="x1" placeholder=" Should get: 0.5">
+            <input type="text" id="x1" name="x1" placeholder=" Should get: 0.5" disabled="disabled">
         </div>
         <div class="item item-6">
             <label for="x2">x2:</label>
-            <input type="text" id="x2" placeholder=" Should get: -3">
+            <input type="text" id="x2" placeholder="Should get: -3" disabled="disabled">
         </div>
     </div>
 
-    <div class="injection"></div>
+    <div class="injection" style="display:none"></div>
+    <div class="injection-error" style="display:none"></div>
 
     <h2>Explanation:</h2>
     <p>The Quadratic Formula can always find the solution to a quadratic equation.</p>
     <p>First, we must arrange the quadratic equation in standard-form set equal to zero. In doing so, we organize the equation in such a way so that we can accurately identify the values from the equation that correspond with the formula. Next, we simply
         plug in these values into the formula</p>
-    <p>b2 − 4ac is the <strong>Discriminant</strong> - Imagine if the curve "just touches" the x-axis. Or imagine the curve is so high it doesn't even cross the x-axis! This is where the "Discriminant" helps us ... Do you see b2 − 4ac in the formula below?
-        It is called the Discriminant, because it can "discriminate" between the possible types of answer: when b2 − 4ac is positive, we get two Real solutions. When it is zero we get just ONE real solution (both answers are the same). When it is negative
+    <p>b2 − 4ac is the <strong>Discriminant</strong> - Imagine if the curve "just touches " the x-axis. Or imagine the curve is so high it doesn't even cross the x-axis! This is where the "Discriminant " helps us ... Do you see b2 − 4ac in the formula below?
+        It is called the Discriminant, because it can "discriminate " between the possible types of answer: when b2 − 4ac is positive, we get two Real solutions. When it is zero we get just ONE real solution (both answers are the same). When it is negative
         we get a pair of Complex solutions</p>
 
 
-    <div class="images">
-        <img src="pics/quadratic-formula-explained.png" height="300px" alt="">
+    <div class="images ">
+        <img src="pics/quadratic-formula-explained.png " height="300px " alt=" ">
         <br>
-        <img src="pics/quadratic-soccer.gif" alt="">
+        <img src="pics/quadratic-soccer.gif " alt=" ">
         <br>
-        <img src="pics/quadratic-equation-reason.svg" alt="">
+        <img src="pics/quadratic-equation-reason.svg " alt=" ">
         <br>
-        <img src="pics/Capture.JPG" alt="">
+        <img src="pics/Capture.JPG " alt=" ">
     </div>
 
 
@@ -64,7 +65,31 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="app.js "></script>
 </body>
 
 </html>
+
+<!-- 
+אסור שA
+ יהיה אפס -->
+
+<!-- The readonly attribute is a boolean attribute.
+
+When present, it specifies that an input field is read-only.
+
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+
+The readonly attribute can be set to keep a user from changing the value until some other conditions have been met (like selecting a checkbox, etc.). Then, a JavaScript can remove the readonly value, and make the input field editable.
+
+Note: A form will still submit an input field that is readonly, but will not submit an input field that is disabled! -->
+
+<!-- The disabled attribute is a boolean attribute.
+
+When present, it specifies that the <input> element should be disabled.
+
+A disabled input element is unusable and un-clickable.
+
+The disabled attribute can be set to keep a user from using the <input> element until some other condition has been met (like selecting a checkbox, etc.). Then, a JavaScript could remove the disabled value, and make the <input> element usable.
+
+Tip: Disabled <input> elements in a form will not be submitted! -->
